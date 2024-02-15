@@ -7,9 +7,22 @@ function Problems() {
   const [maxNum, setMaxNum] = useState(10);
   const [problems, setProblems] = useState([]);
 
+
   useEffect(() => {
     generateProblems();
   }, [minNum, maxNum]);
+
+  useEffect(() => {
+    const allAnsweredCorrectly = problems.every(problem => problem.isCorrect);
+
+    if (allAnsweredCorrectly) {
+      generateProblems(); // Regenerate problems
+      setProblems(newProblems => newProblems.map(p => ({ ...p, answer: null, isCorrect: null }))); // Clear answers and correctness state
+    }
+  }, [problems]);
+  
+  
+
 
   const generateProblems = () => {
     const newProblems = [];
@@ -21,10 +34,12 @@ function Problems() {
         num2: num2,
         answer: null,
         isCorrect: null,
+        
       });
     }
     setProblems(newProblems);
   };
+
 
   const handleCheckAnswer = (problemIndex, isCorrect) => {
     const newProblems = [...problems];
@@ -59,7 +74,7 @@ function Problems() {
 
       {problems.map((problem, index) => (
         <Problem
-          key={index}
+          key={`${index}-${problem.num1}-${problem.num2}`}
           index={index}
           num1={problem.num1}
           num2={problem.num2}
