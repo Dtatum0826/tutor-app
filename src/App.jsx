@@ -3,6 +3,7 @@ import { useRef } from "react";
 import { useState } from "react";
 import InputRange from "./components/InputRange";
 import Problem from "./components/Problem";
+import WordDefinition from "./components/WordDefinition";
 
 function App() {
   const [minNum, setMinNum] = useState(1);
@@ -108,6 +109,7 @@ function App() {
     />
   ))}
 </div>
+<WordDefinition/>
     </div>
   );
 }
