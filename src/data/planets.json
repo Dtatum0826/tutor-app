@@ -1,0 +1,82 @@
+[
+  {
+    "name": "Mercury",
+    "size": 0.3,
+    "distance": 1,
+    "facts": [
+      "Smallest planet in the Solar System.",
+      "Closest planet to the Sun.",
+      "Has no moons."
+    ]
+  },
+  {
+    "name": "Venus",
+    "size": 0.8,
+    "distance": 1.5,
+    "facts": [
+      "Second planet from the Sun.",
+      "Known as the hottest planet in the Solar System.",
+      "Surface temperature can reach about 470°C (880°F)."
+    ]
+  },
+  {
+    "name": "Earth",
+    "size": 1,
+    "distance": 1,
+    "facts": [
+      "Third planet from the Sun.",
+      "Only known planet to support life.",
+      "Has one natural satellite, the Moon."
+    ]
+  },
+  {
+    "name": "Mars",
+    "size": 0.5,
+    "distance": 1.5,
+    "facts": [
+      "Fourth planet from the Sun.",
+      "Often called the 'Red Planet' due to its reddish appearance.",
+      "Has the largest volcano and the deepest canyon in the Solar System."
+    ]
+  },
+  {
+    "name": "Jupiter",
+    "size": 11.2,
+    "distance": 5.2,
+    "facts": [
+      "Fifth planet from the Sun.",
+      "Largest planet in the Solar System.",
+      "Has at least 79 known moons."
+    ]
+  },
+  {
+    "name": "Saturn",
+    "size": 9.45,
+    "distance": 9.5,
+    "facts": [
+      "Sixth planet from the Sun.",
+      "Known for its prominent ring system.",
+      "Has the second-largest moon in the Solar System, Titan."
+    ]
+  },
+  {
+    "name": "Uranus",
+    "size": 4,
+    "distance": 19.2,
+    "facts": [
+      "Seventh planet from the Sun.",
+      "Rotates on its side, with its axis almost parallel to its orbit.",
+      "Has a faint ring system and 27 known moons."
+    ]
+  },
+  {
+    "name": "Neptune",
+    "size": 3.9,
+    "distance": 30.05,
+    "facts": [
+      "Eighth and farthest planet from the Sun.",
+      "Has the strongest winds in the Solar System, reaching speeds of up to 2,100 km/h (1,300 mph).",
+      "Discovered in 1846."
+    ]
+  }
+]

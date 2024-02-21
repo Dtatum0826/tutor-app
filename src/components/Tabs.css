@@ -1,0 +1,29 @@
+.tab-folders {
+  display: flex; /* Arrange folders side-by-side */
+}
+
+.tab-folder {
+  border: 1px solid gray;
+  margin-right: 10px;
+  padding: 10px;
+  position: relative; /* For positioning the tab header */
+}
+
+.tab-header {
+  background-color: lightgray;
+  padding: 5px 10px;
+  border-bottom: 1px solid gray;
+  position: absolute; /* Stick to top of folder */
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.tab-content {
+  display: none;
+  padding: 10px;
+}
+
+.tab-content.active {
+  display: block;
+}
